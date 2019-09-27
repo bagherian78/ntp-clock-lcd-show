@@ -33,6 +33,7 @@ void loop() {
   lcd.print(c3);
   lcd.print(":");
   lcd.print(c5);
+  lcd.clear();
 }
 void rE(){
   while(Wire.available()>1){
