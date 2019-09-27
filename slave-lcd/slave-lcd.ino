@@ -20,7 +20,8 @@ void setup() {
 }
 
 void loop() {
-  delay(1000);
+  lcd.clear();
+  
   Serial.print("this is time loop");
   Serial.print(c);
   Serial.print(":");
@@ -33,7 +34,7 @@ void loop() {
   lcd.print(c3);
   lcd.print(":");
   lcd.print(c5);
-  lcd.clear();
+  delay(1000);
 }
 void rE(){
   while(Wire.available()>1){
